@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#logo {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-bottom: 10px; /* Espacio entre el logo y el título */
+}
+
+h1 {
+    color: #3498db; /* Cambia este color según tu preferencia */
+    font-size: 2.5em; /* Tamaño del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border: 1px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.card.flipped {
+    background-color: #fff;
+    background-image: none;
+}
+
+.card.matched {
+    background-color: #aaffaa;
+    cursor: default;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
